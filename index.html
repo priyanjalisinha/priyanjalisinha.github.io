@@ -23,6 +23,14 @@
 
 	 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="podcast.css" type="text/css" media="screen" title="no title" charset="utf-8">
+            
+<script>
+var Clicks = 0 ;
+function AddClick(){
+Clicks = Clicks + 1;
+document.getElementById('CountedClicks').innerHTML = Clicks + ' people liked this.';
+}
+</script>
 
 </head>
 	<body>
@@ -48,7 +56,13 @@ Duis ante nunc, ornare ultricies hendrerit quis, sodales et ante. Sed sit amet n
         <audio controls>
   <source src="sound/sample.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
-</audio>
+</audio><br>
+        <div id="like">
+            <form style="display:inline-block">
+<span id="CountedClicks" >0 Likes</span>
+        <button onclick="AddClick()" type="button"> <img src="images/like.png" height="20" width="20"> </img></button>
+            </form>
+        </div>
         <br><br>
 <figure>
     <img src="images/A1.jpg" class="statusQuo"/>

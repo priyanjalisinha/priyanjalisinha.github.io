@@ -300,9 +300,11 @@ img.statusQuo {
 	text-decoration: none !important;
 }
 
-
-
-
+#like button {
+    border: none;
+    padding: 10 50;
+    background: none;
+}
 
 
 #footer {
